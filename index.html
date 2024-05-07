@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        /* Estilos opcionales para hacerlo "bonito y organizado" */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form id="registroForm" action="#" method="post">
+        <h2>Formulario de Registro</h2>
+        <fieldset>
+            <label for="nombre">Nombre:</label>
+            <input type ="text" id ="nombre" name ="nombre" required>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            <label for="lugarNacimiento">Lugar de Nacimiento:</label>
+            <input type="text" id="lugarNacimiento" name="lugarNacimiento" required>
+            <legend>Información Personal</legend>
+            <label for="tipoDoc">Tipo Documento Identidad:</label>
+            <select id="tipoDoc" name="tipoDoc" required>
+                <option value="TI">T.I.</option>
+                <option value="CC">C.C.</option>
+            </select><br>
+
+            <label for="numDoc">Número Documento Identidad:</label>
+            <input type="text" id="numDoc" name="numDoc" required pattern="[0-9]{8,10}" title="Ingrese un número de documento válido"><br>
+            <label for="lugarExp">Lugar Expedición Documento Identidad:</label>
+            <input type="text" id="lugarExp" name="lugarExp" required><br>
+
+
+        </fieldset>
+
+
+    <script>
+        // Agregar más validaciones y lógica de validación con JavaScript si es necesario
+    </script>
+</body>
+</html>
