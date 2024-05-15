@@ -60,24 +60,50 @@
             <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
             <label for="lugarNacimiento">Lugar de Nacimiento:</label>
             <input type="text" id="lugarNacimiento" name="lugarNacimiento" required>
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad" name="Edad" required pattern="[0-9]{8,10}" title="Ingrese una edad válida">
             <legend>Información Personal</legend>
             <label for="tipoDoc">Tipo Documento Identidad:</label>
             <select id="tipoDoc" name="tipoDoc" required>
                 <option value="TI">T.I.</option>
                 <option value="CC">C.C.</option>
             </select><br>
-
             <label for="numDoc">Número Documento Identidad:</label>
             <input type="text" id="numDoc" name="numDoc" required pattern="[0-9]{8,10}" title="Ingrese un número de documento válido"><br>
             <label for="lugarExp">Lugar Expedición Documento Identidad:</label>
             <input type="text" id="lugarExp" name="lugarExp" required><br>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <label for="barrio">Barrio:</label>
+            <input type="text" id="barrrio" name="barrio" required>
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+            <label for="celular">Celular:</label>
+            <input type="text" id="celular" name="celular" required>
+            <label for="emailper">Email personal:</label>
+            <input type="text" id="emailper" name="emailper" required>
+            <label for="emailinst">Email inst:</label>
+            <input type="text" id="emailinst" name="emailinst" required>
+            <label for="sangre">Tipo de sangre:</label>
+            <input type="text" id="sangre" name="sangre" required>
+            <label for="eps">EPS:</label>
+            <input type="text" id="eps" name="eps" required>
+            <label for="enfermedad">¿Sufre alguna enfermedad?</label>
+            <input type = radio id="enfermedad" name="tipoDoc" required>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+
+
+
 
 
         </fieldset>
 
 
     <script>
-        // Agregar más validaciones y lógica de validación con JavaScript si es necesario
+   
     </script>
 </body>
 </html>
